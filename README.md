@@ -4,7 +4,7 @@ A responsive, modern front-end interface inspired by CRED Garage, — built with
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **React** (with Vite)
 - **TypeScript**
@@ -17,7 +17,7 @@ A responsive, modern front-end interface inspired by CRED Garage, — built with
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 > Prerequisites: Node.js (v16+), npm or yarn
 
@@ -51,26 +51,16 @@ npm test
 yarn test
 ```
 
-## ⚙️ Features Overview
+## Features Overview
 
-🔐 Intro Animation – Animated VAULT title on initial load
-
-🌗 Dark/Light Theme Toggle – User-selectable theme with localStorage persistence
-
-📽️ Dynamic Backgrounds – Animated background videos based on theme (light/dark)
-
-🧭 Multi-page Navigation – Navigate between Home, User Profile, Benefits, and Rewards pages
-
-🔁 Smooth Page Transitions – Animations powered by Framer Motion
-
-🌀 Layout Transitions & Hover Effects – Subtle animations for user engagement
-
-⏳ Loading States – Simulated loading behavior for rewards page with fake delay
-
-📊 Reward Progress Visualization – Uses Chart.js to show points progress
-
-📱 Responsive Design – Mobile-first and fully responsive layout
-
-⚛️ Modern React Hooks – Uses useState, useEffect, and useRef for interactivity
-
-🧪 Unit Testing – Component tests using Jest and React Testing Library
+- **Intro Animation** – Animated VAULT title on initial load
+- **Dark/Light Theme Toggle** – User-selectable theme with localStorage persistence
+- **Dynamic Backgrounds** – Animated background videos based on theme (light/dark)
+- **Multi-page Navigation** – Navigate between Home, User Profile, Benefits, and Rewards pages
+- **Smooth Page Transitions** – Animations powered by Framer Motion
+- **Layout Transitions & Hover Effects** – Subtle animations for user engagement
+- **Loading States** – Simulated loading behavior for rewards page with fake delay
+- **Reward Progress Visualization** – Uses Chart.js to show points progress
+- **Responsive Design** – Mobile-first and fully responsive layout
+- **Modern React Hooks** – Uses useState, useEffect, and useRef for interactivity
+- **Unit Testing** – Component tests using Jest and React Testing Library
