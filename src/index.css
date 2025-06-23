@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animated gradient for dark mode background */
+@keyframes luxuryGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@layer utilities {
+  .dark .bg-luxury-dark {
+    background: linear-gradient(120deg, #070707, #140d09, #070707);
+    background-size: 200% 200%;
+    animation: luxuryGradient 15s ease infinite;
+  }
+}
+
+/* light mode fill for Rewards page radial empty bar */
+:root {
+  --empty-bar-fill: #302701;
+}
+
+/* dark mode fill for Rewards page radial empty bar */
+.dark {
+  --empty-bar-fill:
+    #e5e7eb;
+}
+
+/* Hide scrollbar for all browsers */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
