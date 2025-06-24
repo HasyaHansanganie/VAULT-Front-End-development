@@ -50,6 +50,10 @@ npm test
 # or
 yarn test
 ```
+After testing them successfully this will show in the terminal:
+
+![UnitTests](public/unit_test.png)
+
 
 ## Features Overview
 
