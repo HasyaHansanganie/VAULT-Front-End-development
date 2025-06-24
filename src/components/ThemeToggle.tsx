@@ -3,6 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { Moon, Sun } from "lucide-react";
 
 const ThemeToggle = () => {
+
     // Initialize theme state based on saved preference
     const [isDark, setIsDark] = useState(() => {
         return localStorage.getItem("theme") === "dark";
