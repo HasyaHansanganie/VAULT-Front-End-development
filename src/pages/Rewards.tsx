@@ -108,7 +108,6 @@ const Rewards = () => {
                                     <PolarAngleAxis type="number" domain={[0, 100]} tick={false} />
                                     <RadialBar
                                         background={{ fill: isDarkMode ? "#2d2d2d" : "#2f1d02", }}
-                                        clockWise
                                         dataKey="value"
                                         cornerRadius={10}
                                     />

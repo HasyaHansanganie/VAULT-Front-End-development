@@ -1,32 +1,20 @@
-import * as React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import ThemeToggle from "../components/ThemeToggle";
+import type { JSX } from "react";
 
 // Mock framer-motion completely: motion components and useAnimation hook
 jest.mock("framer-motion", () => {
     const React = require("react");
+
+    const MockMotion = (Tag: keyof JSX.IntrinsicElements) =>
+        React.forwardRef(({ children, ...props }: any, ref: any) =>
+            React.createElement(Tag, { ref, ...props }, children)
+        );
+
     return {
         motion: {
-            button: React.forwardRef(
-                (
-                    { children, ...props }: { children?: React.ReactNode },
-                    ref: React.ForwardedRef<HTMLButtonElement>
-                ) => (
-                    <button ref={ref} {...props}>
-                        {children}
-                    </button>
-                )
-            ),
-            div: React.forwardRef(
-                (
-                    { children, ...props }: { children?: React.ReactNode },
-                    ref: React.ForwardedRef<HTMLDivElement>
-                ) => (
-                    <div ref={ref} {...props}>
-                        {children}
-                    </div>
-                )
-            ),
+            button: MockMotion("button"),
+            div: MockMotion("div"),
         },
         useAnimation: () => ({
             start: jest.fn(),
@@ -35,6 +23,7 @@ jest.mock("framer-motion", () => {
         }),
     };
 });
+
 
 // Mock lucide-react icons
 jest.mock("lucide-react", () => ({
