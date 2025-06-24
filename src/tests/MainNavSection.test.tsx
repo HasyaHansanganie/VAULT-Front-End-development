@@ -2,10 +2,10 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import MainNavSection from "../components/MainNavSection";
 
-// ✅ Mock Lottie to avoid rendering animation during tests
+// Mock Lottie to avoid rendering animation during tests
 jest.mock("lottie-react", () => () => <div data-testid="lottie-animation" />);
 
-// ✅ Mock animation JSON imports (can be empty objects)
+// Mock animation JSON imports
 jest.mock("../assets/animations/userProfile.json", () => ({}));
 jest.mock("../assets/animations/rewards.json", () => ({}));
 jest.mock("../assets/animations/benefits.json", () => ({}));

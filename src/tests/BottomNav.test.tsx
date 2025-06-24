@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import BottomNav from "../components/BottomNav";
 
-// Mock ThemeToggle (optional if ThemeToggle has heavy logic/animations)
+// Mock ThemeToggle
 jest.mock("../components/ThemeToggle", () => () => <div data-testid="theme-toggle" />);
 
 describe("BottomNav", () => {

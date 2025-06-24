@@ -14,6 +14,6 @@ export default {
     moduleNameMapper: {
         "\\.(css|less|scss|sass)$": "identity-obj-proxy",
         "\\.(jpg|jpeg|png|gif|webp|svg|mp4|mp3|webm|wav|ogg|m4a|aac|oga)$":
-            "<rootDir>/__mocks__/fileMock.js",  // if you import styles
+            "<rootDir>/__mocks__/fileMock.js",
     }
 };
