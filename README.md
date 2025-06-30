@@ -4,6 +4,14 @@ A responsive, modern front-end interface inspired by CRED Garage, — built with
 
 ---
 
+## 📽️ Desktop View
+
+Click here to watch the demonstration.
+
+<a href="https://drive.google.com/file/d/1krFoN-hJgBIPMrkCi-4NMmu3FcrJTPhN/view?usp=drivesdk" target="_blank">
+  Demo
+</a>
+
 ## Tech Stack
 
 - **React** (with Vite)
